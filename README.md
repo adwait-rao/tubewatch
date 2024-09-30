@@ -1,8 +1,22 @@
-# React + Vite
+Here's a GitHub description tailored for your application named **TubeWatch**:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# TubeWatch
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎬 **TubeWatch** is a collaborative watch party application that lets users enjoy YouTube videos together in real-time. Built with React and Vite, TubeWatch synchronizes video playback across multiple users using RxDB for local-first data management and WebRTC for seamless peer-to-peer communication.
+
+## Features
+
+- **Real-Time Video Synchronization**: Watch videos in perfect sync with friends using WebRTC.
+- **Room Management**: Easily create or join unique rooms for personalized viewing experiences.
+- **Intuitive Playback Controls**: Collective controls for play, pause, seek, and volume adjustments.
+- **Local Data Storage**: Efficiently manage playback state with RxDB for offline support.
+- **Responsive Design**: A user-friendly interface that works seamlessly on both desktop and mobile devices.
+
+## Tech Stack
+
+- **Frontend**: React, Vite
+- **Database**: RxDB
+- **Real-Time Communication**: WebRTC
+- **Routing**: React Router
