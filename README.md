@@ -1,7 +1,3 @@
-Here's a GitHub description tailored for your application named **TubeWatch**:
-
----
-
 # TubeWatch
 
 🎬 **TubeWatch** is a collaborative watch party application that lets users enjoy YouTube videos together in real-time. Built with React and Vite, TubeWatch synchronizes video playback across multiple users using RxDB for local-first data management and WebRTC for seamless peer-to-peer communication.
