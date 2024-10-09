@@ -3,10 +3,11 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home.jsx";
-import { DatabaseProvider } from "./DbContext";
+import { DatabaseProvider } from "./context/DbContext.jsx";
 import HomeLayout from "./pages/HomeLayout.jsx";
 import About from "./pages/About.jsx";
 import Room from "./pages/Room.jsx";
+import { UserProvider } from "./context/UserContext.jsx";
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,9 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <DatabaseProvider>
-      <RouterProvider router={router}></RouterProvider>
+      <UserProvider>
+        <RouterProvider router={router}></RouterProvider>
+      </UserProvider>
     </DatabaseProvider>
   </StrictMode>
 );

@@ -16,10 +16,17 @@ const roomSchema = {
   type: "object",
   properties: {
     roomId: { type: "string", maxLength: 100 },
-    roomTitle: { type: "string", maxLength: 250 },
+    // roomTitle: { type: "string", maxLength: 250 },
     participants: {
-      type: "array",
-      items: { type: "string" }, // Array of user IDs
+      type: "object",
+      properties: {
+        userId: {
+          type: "string",
+        },
+        username: {
+          type: "string",
+        },
+      },
     },
     videoUrl: {
       type: "string",
@@ -37,7 +44,8 @@ const playbackStateSchema = {
   properties: {
     playbackId: { type: "string", maxLength: 100 },
     roomId: { type: "string" },
-    currentTime: { type: "number" }, // Current playback time in seconds
+    elapsed: { type: "number" }, // Current playback time in seconds
+    duration: { type: "number" },
     isPlaying: { type: "boolean" }, // Playback status
   },
   required: ["roomId", "currentTime", "isPlaying"],
